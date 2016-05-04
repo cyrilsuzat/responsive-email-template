@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Responsive Email Template</title>
+
+  <style type="text/css" media="screen">
+
+    /* Global
+    -------------------------------------------------------------- */
+
+    * { margin: 0; padding: 0; }
+    body { -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; }
+    #wrapper { background-color: #d8ebf1; }
+    table { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    a, img { border-style: none; }
+
+
+    /* Sections
+    -------------------------------------------------------------- */
+
+    /* Pre-Header */
+    #pre-header { padding: 15px; background-color: #333333; color: #cccccc; font-size: 14px; text-align: center; }
+    #pre-header a { color: #cccccc; }
+
+    /* Header */
+    #header { padding: 15px; background-color: #249faf; text-align: left; color: #ffffff; }
+    #header h1 { font-weight: 400; font-size: 38px; color: #ffffff; }
+
+    /* Body */
+    #body { padding: 15px; background-color: #ffffff; text-align: left; }
+    #body h2 { font-weight: 200; font-size: 27px; margin-bottom: 10px; color: #1E8491; }
+    #body h3 { font-weight: 200; font-size: 23px; margin-bottom: 10px; }
+    #body h3 small { font-size: 60%; color: #6f6f6f; }
+    #body p { margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
+    #body img { max-width: 100%; }
+    #body .btn { text-decoration: none; color: #ffffff; background-color: #666666; padding: 10px 16px; font-weight: bold; margin-right: 10px; text-align: center; display: inline-block; }
+    #body .col { margin-bottom: 15px; }
+
+    /* Footer */
+    #footer { padding: 15px; background-color: #cccccc; color: #333333; font-size: 14px; text-align: center; }
+
+    /* Post-Footer */
+    #post-footer { padding: 15px; background-color: #333333; color: #cccccc; font-size: 14px; text-align: center; }
+    #post-footer a { color: #cccccc; }
+
+
+    /* Typography
+    -------------------------------------------------------------- */
+
+    * { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+
+    /* Responsiveness
+    -------------------------------------------------------------- */
+
+    @media only screen and (max-width: 600px) {
+      body { background-color: none; }
+      table[id="container"] { width:100% !important; }
+      td[id="pre-header"] { display: none; }
+      td[id="header"] { background-color: #cc9999 !important; }
+      td[id="body"] .btn { display: block !important; }
+      td[id="body"] img { content: url("http://placehold.it/600x400/cc9999/ffffff"); }
+      table[class="row"] { width:100% !important; }
+      table[class="col"] { width:100% !important; }
+    }
+
+  </style>
+</head>
+
+<body>
+  <center>
+    <table id="wrapper" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+      <tr>
+        <td align="center" valign="top">
+          <table id="container" border="0" cellpadding="0" cellspacing="0" width="600">
+
+            <!-- Pre-Header ============================================================================= -->
+            <tr>
+              <td id="pre-header">
+                Ut enim ad <a href="#">minim veniam</a>
+              </td>
+            </tr>
+            <!-- /Pre-Header ============================================================================ -->
+
+            <!-- Header ================================================================================= -->
+            <tr>
+              <td id="header">
+                <table border="0" cellpadding="0" cellspacing="0" width="570" class="row">
+                  <tr>
+                    <td>
+                      <h1>Responsive Email Template</h1>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- /Header ================================================================================ -->
+
+            <!-- Body =================================================================================== -->
+            <tr>
+              <td id="body">
+                <table border="0" cellpadding="0" cellspacing="0" width="570" class="row">
+                  <tr>
+                    <td>
+                      <h2>Claritas est etiam,</h2>
+                      <p>
+                        Processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est
+                        notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum
+                        formas humanitatis per seacula quarta decima et quinta decima.
+                      </p>
+                      <p><a href="#"><img src="http://placehold.it/600x250/c5e2ea/ffffff" alt="" /></a></p>
+                    </td>
+                  </tr>
+                </table>
+
+                <table border="0" cellpadding="0" cellspacing="0" width="570" class="row">
+                  <tr>
+                    <td>
+                      <!-- Left Column -->
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="270" class="col">
+                        <tr>
+                          <td>
+                            <h3>Lorem <small>Left Column</small></h3>
+                            <p>
+                              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                              ex ea commodo consequat.
+                            </p>
+                            <a href="#" class="btn">Click Me!</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /Left Column -->
+
+                      <!-- Right Column -->
+                      <table align="right" border="0" cellpadding="0" cellspacing="0" width="270" class="col">
+                        <tr>
+                          <td>
+                            <h3>Ipsum <small>Right Column</small></h3>
+                            <p>
+                              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                              ex ea commodo consequat.
+                            </p>
+                            <a href="#" class="btn">Click Me!</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /Right Column -->
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+            <!-- /Body ================================================================================== -->
+
+            <!-- Footer ================================================================================= -->
+            <tr>
+              <td id="footer">
+                Footer
+              </td>
+            </tr>
+            <!-- /Footer ================================================================================ -->
+
+            <!-- Post-Footer ============================================================================ -->
+            <tr>
+              <td id="post-footer">
+                Post-Footer
+              </td>
+            </tr>
+            <!-- /Post-Footer =========================================================================== -->
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
