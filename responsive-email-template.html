@@ -7,18 +7,19 @@
 
   <style type="text/css" media="screen">
 
-    /* Global
+    /* Reset
     -------------------------------------------------------------- */
 
-    * { margin: 0; padding: 0; }
-    body { -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; }
-    #wrapper { background-color: #d8ebf1; }
+    body { width: 100% !important; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; margin: 0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; }
     table { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    h1, h2, h3, p { margin: 0; padding: 0; }
     a, img { border-style: none; }
 
 
-    /* Sections
+    /* Layout
     -------------------------------------------------------------- */
+
+    body, #wrapper { background-color: #d8ebf1; }
 
     /* Pre-Header */
     #pre-header { padding: 15px; background-color: #333333; color: #cccccc; font-size: 14px; text-align: center; }
@@ -30,7 +31,7 @@
 
     /* Content */
     #content { padding: 15px; background-color: #ffffff; text-align: left; }
-    #content h2 { font-weight: 200; font-size: 27px; margin-bottom: 10px; color: #1E8491; }
+    #content h2 { font-weight: 200; font-size: 27px; margin-bottom: 10px; color: #1e8491; }
     #content h3 { font-weight: 200; font-size: 23px; margin-bottom: 10px; }
     #content h3 small { font-size: 60%; color: #6f6f6f; }
     #content p { margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
@@ -46,17 +47,11 @@
     #post-footer a { color: #cccccc; }
 
 
-    /* Typography
-    -------------------------------------------------------------- */
-
-    * { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
-
     /* Responsiveness
     -------------------------------------------------------------- */
 
     @media only screen and (max-width: 600px) {
-      body { background-color: none; }
+      body, #wrapper { background-color: #ffffff; }
       table[id="container"] { width:100% !important; }
       td[id="pre-header"] { display: none; }
       td[id="header"] { background-color: #cc9999 !important; }
