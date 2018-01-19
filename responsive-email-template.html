@@ -7,19 +7,18 @@
 
   <style type="text/css" media="screen">
 
-    /* Reset
+    /* Global
     -------------------------------------------------------------- */
 
-    body { width: 100% !important; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; margin: 0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; }
+    * { margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    body { -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; }
+    body, #wrapper { background-color: #d8ebf1; }
     table { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
-    h1, h2, h3, p { margin: 0; padding: 0; }
     a, img { border-style: none; }
 
 
-    /* Layout
+    /* Sections
     -------------------------------------------------------------- */
-
-    body, #wrapper { background-color: #d8ebf1; }
 
     /* Pre-Header */
     #pre-header { padding: 15px; background-color: #333333; color: #cccccc; font-size: 14px; text-align: center; }
@@ -36,7 +35,7 @@
     #content h3 small { font-size: 60%; color: #6f6f6f; }
     #content p { margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
     #content img { max-width: 100%; }
-    #content .btn { text-decoration: none; color: #ffffff; background-color: #666666; padding: 10px 24px; font-weight: bold; margin-right: 10px; text-align: center; display: inline-block; border-radius: 8px; }
+    #content .btn { text-decoration: none; color: #ffffff; background-color: #666666; padding: 10px 24px; font-weight: bold; margin-right: 10px; text-align: center; display: inline-block; }
     #content .col { margin-bottom: 15px; }
 
     /* Footer */
@@ -52,21 +51,23 @@
 
     @media only screen and (max-width: 600px) {
       body, #wrapper { background-color: #ffffff; }
-      #container { width:100% !important; }
-      #pre-header { display: none; }
-      #header { background-color: #cc9999 !important; }
-      #content h2 { font-size: 32px; color: #cc9999 }
-      #content p { font-size: 16px; }
-      #content img { content: url("http://placehold.it/600x400/cc9999/ffffff"); }
-      #content .btn { display: block !important; }
-      .row, .col { width:100% !important; }
+      table[id="container"] { width:100% !important; }
+      td[id="pre-header"] { display: none; }
+      td[id="header"] { background-color: #cc9999 !important; }
+      td[id="content"] h2 { font-size: 32px !important; color: #cc9999 !important; }
+      td[id="content"] p { font-size: 16px !important; }
+      td[id="content"] img { content: url("http://placehold.it/600x400/cc9999/ffffff"); }
+      td[id="content"] .btn { display: block !important; border-radius: 5px; }
+      table[class="row"] { width:100% !important; }
+      table[class="col"] { width:100% !important; }
     }
 
   </style>
 </head>
 
 <body>
-  <table id="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%">
+<center>
+  <table id="wrapper" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
     <tr>
       <td align="center" valign="top">
         <table id="container" border="0" cellpadding="0" cellspacing="0" width="600">
@@ -96,6 +97,7 @@
           <!-- Content ================================================================================ -->
           <tr>
             <td id="content">
+              <!-- Row -->
               <table border="0" cellpadding="0" cellspacing="0" width="570" class="row">
                 <tr>
                   <td>
@@ -109,7 +111,9 @@
                   </td>
                 </tr>
               </table>
+              <!-- /Row -->
 
+              <!-- Row -->
               <table border="0" cellpadding="0" cellspacing="0" width="570" class="row">
                 <tr>
                   <td>
@@ -147,7 +151,7 @@
                   </td>
                 </tr>
               </table>
-
+              <!-- /Row -->
             </td>
           </tr>
           <!-- /Content =============================================================================== -->
@@ -172,5 +176,6 @@
       </td>
     </tr>
   </table>
+</center>
 </body>
 </html>
