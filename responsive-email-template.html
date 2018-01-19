@@ -52,13 +52,14 @@
 
     @media only screen and (max-width: 600px) {
       body, #wrapper { background-color: #ffffff; }
-      table[id="container"] { width:100% !important; }
-      td[id="pre-header"] { display: none; }
-      td[id="header"] { background-color: #cc9999 !important; }
-      td[id="content"] .btn { display: block !important; }
-      td[id="content"] img { content: url("http://placehold.it/600x400/cc9999/ffffff"); }
-      table[class="row"] { width:100% !important; }
-      table[class="col"] { width:100% !important; }
+      #container { width:100% !important; }
+      #pre-header { display: none; }
+      #header { background-color: #cc9999 !important; }
+      #content h2 { font-size: 32px; color: #cc9999 }
+      #content p { font-size: 16px; }
+      #content img { content: url("http://placehold.it/600x400/cc9999/ffffff"); }
+      #content .btn { display: block !important; }
+      .row, .col { width:100% !important; }
     }
 
   </style>
